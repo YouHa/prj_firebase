@@ -1,3 +1,4 @@
+// src/components/financial-entry/financial-entry-table.tsx
 "use client";
 
 import {
@@ -14,6 +15,7 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuLabel,
 import { MoreHorizontal, Edit, Trash2 } from "lucide-react";
 import type { FinancialEntry } from "@/types";
 import { format } from "date-fns";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 interface FinancialEntryTableProps {
   entries: FinancialEntry[];
